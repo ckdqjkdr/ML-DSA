@@ -1,0 +1,13 @@
+{
+  "name": "Rust Codespace",
+  "image": "mcr.microsoft.com/devcontainers/rust:1",
+  "extensions": [
+    "rust-lang.rust-analyzer",
+    "serayuzgur.crates"
+  ],
+  "forwardPorts": [8080],
+  "postCreateCommand": "rustup component add rust-src rustfmt clippy || true",
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  }
+}
